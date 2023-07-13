@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Face Recognition</title>
+  <title>Image Upload</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <section class="image-upload" id="celebrity-panel">
-      <h2>Upload Celebrity Image</h2>
-      <div class="image-upload-box" id="celebrity-upload-box">
-        <label for="celebrity-photo">Drag and Drop or Click to Upload</label>
-        <input type="file" id="celebrity-photo" accept="image/*">
-      </div>
-    </section>
+  <header>
+    <h1>Image Upload</h1>
+  </header>
 
-    <section class="image-upload" id="image-panel">
-      <h2>Upload Image</h2>
-      <div class="image-upload-box" id="image-upload-box">
-        <label for="image-photo">Drag and Drop or Click to Upload</label>
-        <input type="file" id="image-photo" accept="image/*">
+  <main>
+    <section>
+      <div class="image-upload">
+        <input type="file" id="image" accept="image/*">
+        <label for="image">
+          <span class="upload-text">Drag and Drop or Click to Upload</span>
+        </label>
       </div>
     </section>
   </main>

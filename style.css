@@ -2,52 +2,49 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #d8f3dc; /* Light greenish background color */
+  background-color: #e6f7ff; /* Very light sky blue background color */
+}
+
+header {
+  background-color: #4ca6e7; /* Sky blue color for header */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  display: flex; /* Display the sections side by side */
-}
-
-section.image-upload {
-  flex: 1; /* Each section occupies equal space */
-  margin-right: 20px;
-  background-color: #fff; /* Light background color */
+  background-color: #d4eefc; /* Sky blue color for main content */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: 30px;
 }
 
-h2 {
-  margin-top: 0;
-}
-
-.image-upload-box {
-  border: 2px dashed #ccc;
-  padding: 30px;
+section {
   text-align: center;
+}
+
+.image-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 2px dashed #4ca6e7; /* Match the header color for the border */
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.image-upload-box label {
-  display: block;
-  margin-top: 20px;
-  color: #333;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.image-upload-box label:hover {
-  color: #555;
+.image-upload:hover {
+  background-color: #c4e8ff; /* Light sky blue color for hover background */
 }
 
 .upload-text {
-  font-size: 16px;
+  font-size: 18px;
+  color: #4ca6e7; /* Match the header color for the text */
 }
 
-.image-upload-box input[type="file"] {
+.image-upload input[type="file"] {
   display: none;
 }
